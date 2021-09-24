@@ -1,0 +1,886 @@
+body {
+  font-size: 62.5%;
+  background-color: #f3eee9;
+  font-family: Sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5rem;
+  -webkit-box-shadow: 0px 5px 10px grey;
+          box-shadow: 0px 5px 10px grey;
+  position: relative;
+}
+
+.upload {
+  background-color: white;
+  width: 23rem;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem 1rem 1rem 1rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.upload_dashed {
+  position: absolute;
+  margin-top: 0.7rem;
+  margin-left: 0.7rem;
+  width: 21rem;
+  height: 18rem;
+  border-style: dashed;
+  border-width: 5px;
+  color: lightgrey;
+}
+
+.upload_icon {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin-left: 9rem;
+  margin-top: 5rem;
+}
+
+.upload h3 {
+  margin-top: 9rem;
+  margin-bottom: 0;
+  font-weight: lighter;
+  color: grey;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upload p {
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  color: darkgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upload p:last-child {
+  color: #286bb8;
+}
+
+.twoimages {
+  width: 23rem;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: #f3eee9;
+  margin-bottom: 1rem;
+}
+
+.twoimages_first {
+  position: relative;
+  background-image: url("../assets/blue_house.png");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: center;
+  width: 11rem;
+  height: 20rem;
+  margin: 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.twoimages_first_header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 11rem;
+  height: 15rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  margin-top: 5rem;
+  overflow: hidden;
+}
+
+.twoimages_first_header_italy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.twoimages_first_header_italy button {
+  border: none;
+  background-color: red;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.twoimages_first_header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: lighter;
+  color: white;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.twoimages_first_header p {
+  font-size: 1.1rem;
+  color: white;
+  margin-top: 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.twoimages_first_footer {
+  position: relative;
+  width: 11rem;
+  height: 5rem;
+  background-color: #286bb8;
+  overflow: hidden;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.twoimages_first_footer_viewtrip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.twoimages_second {
+  position: relative;
+  background-image: url("../assets/burano_doors.png");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: center;
+  width: 11rem;
+  height: 20rem;
+  margin: 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.twoimages_second_header {
+  position: relative;
+  background-image: url("../assets/icon-place.svg");
+  background-repeat: no-repeat;
+  width: 16%;
+  height: 16%;
+  margin-top: 7rem;
+  margin-left: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.twoimages_second h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: lighter;
+  color: white;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.twoimages_second hr {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+}
+
+.twoimages_second_button {
+  position: relative;
+  width: 9rem;
+  height: 3rem;
+  background-color: #286bb8;
+  overflow: hidden;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.twoimages_second_button_knowmore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.florence {
+  background-image: url("../assets/florence_italy.png");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+  width: 48rem;
+  height: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  overflow: hidden;
+}
+
+.florence_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 3rem;
+  margin-right: 4rem;
+}
+
+.florence_header button {
+  padding-top: 3px;
+  padding-right: 15px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  border: none;
+  background-color: white;
+}
+
+.florence_watermark {
+  font-size: 15rem;
+  position: absolute;
+  opacity: 10%;
+  color: white;
+  left: -8rem;
+  top: 16rem;
+}
+
+.florence_content {
+  padding-right: 3rem;
+  padding-top: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.florence_content_description {
+  border-left: 5px solid green;
+  padding-left: 2rem;
+}
+
+.florence_content_description span {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: green;
+}
+
+.florence_content_description h3 {
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+  color: white;
+}
+
+.florence_content_view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.florence_content_view button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-position: center;
+  background-color: #286bb8;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  padding: 1rem;
+  width: 8rem;
+  height: 3rem;
+  z-index: 3;
+}
+
+.florence_content_view button:hover {
+  background-color: white;
+  color: blue;
+}
+
+.colosseum {
+  position: relative;
+  width: 23rem;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: #f3eee9;
+  margin-bottom: 1rem;
+}
+
+.colosseum_pictures {
+  position: relative;
+  width: 23rem;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: #f3eee9;
+  margin-bottom: 1rem;
+}
+
+.colosseum_pictures_left {
+  position: relative;
+  background-color: #286bb8;
+  background-position: center;
+  width: 11rem;
+  height: 10rem;
+  margin: 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.colosseum_pictures_left img {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-top: 2.5rem;
+  margin-left: 3.8rem;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.colosseum_pictures_left span {
+  font-weight: lighter;
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  color: white;
+}
+
+.colosseum_pictures_right {
+  position: relative;
+  background-image: url("../assets/cta2.png");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: top;
+  width: 11rem;
+  height: 10rem;
+  margin: 0;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.colosseum_content {
+  position: relative;
+  width: 23rem;
+  height: 19rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-image: url("../assets/colosseum.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 5px 10px grey;
+          box-shadow: 0px 5px 10px grey;
+}
+
+.colosseum_content_icons {
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.colosseum_content_icons button {
+  border: none;
+  background-color: red;
+  color: white;
+  padding-top: 3px;
+  padding-right: 15px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+}
+
+.colosseum_content_more {
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  left: 250px;
+  top: 170px;
+  width: 30px;
+  height: 30px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.colosseum_content_text {
+  position: absolute;
+  font-weight: lighter;
+  top: 360px;
+  left: 40px;
+  font-size: 1.5rem;
+  color: white;
+  z-index: 99;
+}
+
+.colosseum_content_location {
+  position: absolute;
+  display: inline-block;
+  font-size: 1rem;
+  top: 415px;
+  left: 40px;
+  color: white;
+  z-index: 99;
+}
+
+.venice {
+  width: 23rem;
+  height: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  overflow: hidden;
+}
+
+.venice_header {
+  background-image: url("../assets/venice_islands.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 23rem;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.venice_header_italy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 2.5rem;
+  padding-bottom: 11rem;
+}
+
+.venice_header_italy button {
+  padding-top: 3px;
+  padding-right: 15px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  border: none;
+  background-color: red;
+  color: white;
+}
+
+.venice_content {
+  background-color: white;
+  width: 23rem;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: column;
+      -ms-flex-pack: column;
+          justify-content: column;
+}
+
+.venice_content h2 {
+  font-weight: lighter;
+  padding-top: 1.5rem;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.venice_content_description {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.venice_content_description_details {
+  word-wrap: break-word;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-clip: text;
+  background: -webkit-linear-gradient(#797575, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.venice_view {
+  position: absolute;
+  top: 24rem;
+  left: 7rem;
+  z-index: 3;
+}
+
+.venice_view button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-position: center;
+  background-color: #286bb8;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  padding: 1rem;
+  width: 8rem;
+  height: 3rem;
+  z-index: 3;
+}
+
+.venice_view button:hover {
+  -webkit-box-shadow: 0px 5px 10px #286bb8;
+          box-shadow: 0px 5px 10px #286bb8;
+}
+
+.door {
+  background-image: url("../assets/burano_doors.png");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center;
+  width: 23rem;
+  height: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+  border-bottom: 5px solid red;
+}
+
+.door_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.door_header_heart:hover {
+  -webkit-filter: invert(85%) sepia(93%) saturate(715%) hue-rotate(354deg) brightness(215%) contrast(133%);
+          filter: invert(85%) sepia(93%) saturate(715%) hue-rotate(354deg) brightness(215%) contrast(133%);
+}
+
+.door_content {
+  padding-right: 3rem;
+  padding-top: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.door_content_description {
+  padding-left: 2rem;
+}
+
+.door_content_description h2 {
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.door_content_description span {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: white;
+}
+
+.door_content_count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+}
+
+.door_content_count button {
+  position: relative;
+  border-radius: 2rem;
+  background-position: center;
+  background-color: red;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  width: 3.5rem;
+  height: 1.5rem;
+}
+
+.bluehouse {
+  background-image: url("../assets/blue_house.png");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center;
+  width: 23rem;
+  height: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+}
+
+.bluehouse_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.bluehouse_header_heart:hover {
+  -webkit-filter: invert(85%) sepia(93%) saturate(715%) hue-rotate(354deg) brightness(215%) contrast(133%);
+          filter: invert(85%) sepia(93%) saturate(715%) hue-rotate(354deg) brightness(215%) contrast(133%);
+}
+
+.bluehouse_content {
+  position: relative;
+  width: 290px;
+  height: 160px;
+  top: 270px;
+  left: 40px;
+  border-radius: 10px 10px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+.bluehouse_content_star {
+  width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: space-between;
+          flex-direction: space-between;
+}
+
+.bluehouse_content_star_stars {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.6rem;
+}
+
+.bluehouse_content_star_review {
+  margin-top: 0.8rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: grey;
+}
+
+.bluehouse_content h3 {
+  font-size: 1.7rem;
+  margin-left: 0.6rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.bluehouse_content_location {
+  font-size: 1rem;
+  margin-left: 0.6rem;
+  margin-top: 0;
+  color: grey;
+}
+
+.bluehouse_content_price {
+  width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: space-between;
+          flex-direction: space-between;
+}
+
+.bluehouse_content_price_night {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-left: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+
+.bluehouse_content_price_forward {
+  border: 0;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  margin-left: 5rem;
+  background-color: #286bb8;
+}
+
+.bluehouse_content_price_forward_arrow {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+/*# sourceMappingURL=style.css.map */

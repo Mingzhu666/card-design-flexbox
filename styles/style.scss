@@ -1,0 +1,753 @@
+body {
+  font-size: 62.5%;
+  background-color: rgb(243, 238, 233);
+  font-family: Sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  box-shadow: 0px 5px 10px grey;
+  position: relative;
+}
+
+.upload {
+  background-color: white;
+  width: 23rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem 1rem 1rem 1rem;
+  cursor: pointer;
+  overflow: hidden;
+
+  &_dashed {
+    position: absolute;
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+    width: 21rem;
+    height: 18rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    border-style: dashed;
+    border-width: 5px;
+    color: lightgrey;
+  }
+
+  &_icon {
+    position: absolute;
+    // background-image: url("../assets/icon-forward.svg");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    // filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
+    //   brightness(119%) contrast(119%);
+    filter: invert(1);
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin-left: 9rem;
+    margin-top: 5rem;
+  }
+
+  h3 {
+    margin-top: 9rem;
+    margin-bottom: 0;
+    font-weight: lighter;
+    color: grey;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p:last-child {
+    color: rgb(40, 107, 184);
+  }
+}
+
+.twoimages {
+  width: 23rem;
+  height: 20rem;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  flex-flow: column wrap;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: rgb(243, 238, 233);
+  margin-bottom: 1rem;
+
+  &_first {
+    position: relative;
+    background-image: url("../assets/blue_house.png");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+    width: 11rem;
+    height: 20rem;
+    margin: 0;
+    border-radius: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &_header {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 11rem;
+      height: 15rem;
+      border-radius: 1rem 1rem 0rem 0rem;
+      margin-top: 5rem;
+      overflow: hidden;
+
+      &_italy {
+        // border: 1px solid green;
+        display: flex;
+        justify-content: center;
+
+        button {
+          border: none;
+          background-color: red;
+          color: white;
+          margin-bottom: 1rem;
+        }
+      }
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: lighter;
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: white;
+        margin-top: 0.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &_footer {
+      position: relative;
+      width: 11rem;
+      height: 5rem;
+      background-color: rgb(40, 107, 184);
+      overflow: hidden;
+      border-radius: 0rem 0rem 1rem 1rem;
+
+      &_viewtrip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        color: white;
+      }
+    }
+  }
+
+  &_second {
+    position: relative;
+    background-image: url("../assets/burano_doors.png");
+    background-repeat: no-repeat;
+
+    background-size: 200%;
+    background-position: center;
+    width: 11rem;
+    height: 20rem;
+    margin: 0;
+    border-radius: 1rem 1rem 1rem 1rem;
+
+    &_header {
+      position: relative;
+      background-image: url("../assets/icon-place.svg");
+      background-repeat: no-repeat;
+      width: 16%;
+      height: 16%;
+      margin-top: 7rem;
+      margin-left: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: lighter;
+      color: white;
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    hr {
+      width: 20px;
+      // border-top: 4px solid white;
+      height: 2px;
+      background-color: white;
+    }
+
+    &_button {
+      position: relative;
+      width: 9rem;
+      height: 3rem;
+      background-color: rgb(40, 107, 184);
+      overflow: hidden;
+      border-radius: 1rem 1rem 1rem 1rem;
+      margin: auto;
+      margin-top: 3rem;
+
+      &_knowmore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        color: white;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.florence {
+  background-image: url("../assets/florence_italy.png");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+  width: 48rem;
+  height: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  overflow: hidden;
+
+  &_header {
+    // border: 1px solid green;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    margin-right: 4rem;
+
+    button {
+      padding-top: 3px;
+      padding-right: 15px;
+      padding-bottom: 3px;
+      padding-left: 15px;
+      border: none;
+      background-color: white;
+    }
+  }
+
+  &_watermark {
+    font-size: 15rem;
+    position: absolute;
+    opacity: 10%;
+    color: white;
+    // border: 1px solid red;
+    left: -8rem;
+    top: 16rem;
+  }
+
+  &_content {
+    // border: 5px solid blue;
+    padding-right: 3rem;
+    padding-top: 15rem;
+    display: flex;
+    justify-content: space-between;
+
+    &_description {
+      // border: 1px solid orange;
+      border-left: 5px solid green;
+      padding-left: 2rem;
+
+      span {
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        color: green;
+      }
+
+      h3 {
+        font-weight: lighter;
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+        color: white;
+      }
+    }
+
+    &_view {
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      button {
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        background-position: center;
+        background-color: rgb(40, 107, 184);
+        font-size: 1rem;
+        color: white;
+        border: none;
+        padding: 1rem;
+        width: 8rem;
+        height: 3rem;
+        z-index: 3;
+
+        &:hover {
+          background-color: white;
+          color: blue;
+        }
+      }
+    }
+  }
+}
+
+.colosseum {
+  position: relative;
+  width: 23rem;
+  height: 30rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-flow: column wrap;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: rgb(243, 238, 233);
+  margin-bottom: 1rem;
+
+  &_pictures {
+    position: relative;
+    width: 23rem;
+    height: 10rem;
+    display: flex;
+    align-content: space-between;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: rgb(243, 238, 233);
+    margin-bottom: 1rem;
+
+    &_left {
+      position: relative;
+      background-color: rgb(40, 107, 184);
+      background-position: center;
+      width: 11rem;
+      height: 10rem;
+      margin: 0;
+      border-radius: 1rem 1rem 1rem 1rem;
+
+      img {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-top: 2.5rem;
+        margin-left: 3.8rem;
+        filter: brightness(0) invert(1);
+      }
+
+      span {
+        font-weight: lighter;
+        font-size: 1.8rem;
+        display: inline-block;
+        margin-top: 6rem;
+        margin-left: 2rem;
+        color: white;
+      }
+    }
+
+    &_right {
+      position: relative;
+      background-image: url("../assets/cta2.png");
+      background-repeat: no-repeat;
+      background-size: 150%;
+      background-position: top;
+      width: 11rem;
+      height: 10rem;
+      margin: 0;
+      border-radius: 1rem 1rem 1rem 1rem;
+    }
+  }
+
+  &_content {
+    position: relative;
+    width: 23rem;
+    height: 19rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-flow: column wrap;
+    border-radius: 1rem 1rem 1rem 1rem;
+    // margin-top: 11rem;
+    background-image: url("../assets/colosseum.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px grey;
+
+    &_icons {
+      // border: 1px solid green;
+      position: absolute;
+      margin-top: 3rem;
+      margin-left: 3rem;
+
+      button {
+        border: none;
+        background-color: red;
+        color: white;
+        padding-top: 3px;
+        padding-right: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+      }
+    }
+
+    &_more {
+      position: absolute;
+      margin-top: 3rem;
+      margin-left: 3rem;
+      // position: absolute;
+      left: 250px;
+      top: 170px;
+      // top: 0px;
+      // top: 300px;
+      // // background-image: url("../assets/more.png");
+      // background-repeat: no-repeat;
+      // background-size: 14%;
+      // background-position: center;
+      width: 30px;
+      height: 30px;
+      // border: 0;
+      filter: brightness(0) invert(1);
+    }
+
+    &_text {
+      position: absolute;
+      font-weight: lighter;
+      // padding: 0;
+      top: 360px;
+      left: 40px;
+      font-size: 1.5rem;
+      // margin-top: 10rem;
+      // margin-left: 2rem;
+      // margin-bottom: 0rem;
+      color: white;
+      z-index: 99;
+    }
+
+    &_location {
+      position: absolute;
+      display: inline-block;
+      font-size: 1rem;
+      top: 415px;
+      left: 40px;
+      // margin-top: 2rem;
+      // margin-top: 0.2rem;
+      // margin-left: 2rem;
+      color: white;
+      z-index: 99;
+    }
+  }
+}
+
+.venice {
+  width: 23rem;
+  height: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  overflow: hidden;
+
+  &_header {
+    background-image: url("../assets/venice_islands.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 23rem;
+    height: 15rem;
+
+    // border: 1px solid green;
+    display: flex;
+    justify-content: flex-end;
+
+    &_italy {
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-right: 2.5rem;
+      padding-bottom: 11rem;
+
+      button {
+        padding-top: 3px;
+        padding-right: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        border: none;
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+
+  &_content {
+    background-color: white;
+    width: 23rem;
+    height: 15rem;
+    display: flex;
+    justify-content: column;
+
+    h2 {
+      font-weight: lighter;
+      padding-top: 1.5rem;
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    &_description {
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+      &_details {
+        word-wrap: break-word;
+        letter-spacing: 0.1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        background-clip: text;
+        background: -webkit-linear-gradient(rgb(121, 117, 117), #eee);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  &_view {
+    // border: 1px solid red;
+    position: absolute;
+    top: 24rem;
+    left: 7rem;
+    z-index: 3;
+
+    button {
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      background-position: center;
+      background-color: rgb(40, 107, 184);
+      font-size: 1rem;
+      color: white;
+      border: none;
+      padding: 1rem;
+      width: 8rem;
+      height: 3rem;
+      z-index: 3;
+
+      &:hover {
+        box-shadow: 0px 5px 10px rgb(40, 107, 184);
+      }
+    }
+  }
+}
+
+.door {
+  background-image: url("../assets/burano_doors.png");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center;
+  width: 23rem;
+  height: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+  border-bottom: 5px solid red;
+
+  &_header {
+    // border: 1px solid green;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    cursor: pointer;
+
+    &_heart {
+      &:hover {
+        filter: invert(85%) sepia(93%) saturate(715%) hue-rotate(354deg)
+          brightness(215%) contrast(133%);
+
+        // color: red;
+        // fill: currentColor;
+      }
+    }
+  }
+
+  &_content {
+    padding-right: 3rem;
+    padding-top: 18rem;
+    display: flex;
+    justify-content: space-between;
+
+    &_description {
+      // border: 1px solid orange;
+      padding-left: 2rem;
+
+      h2 {
+        font-weight: lighter;
+        padding: 0;
+        margin: 0;
+        font-size: 1.6rem;
+        color: white;
+      }
+
+      span {
+        display: inline-block;
+        margin-top: 0.6rem;
+        color: white;
+      }
+    }
+
+    &_count {
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-right: 2rem;
+      padding-top: 0.5rem;
+
+      button {
+        position: relative;
+        border-radius: 2rem;
+        background-position: center;
+        background-color: red;
+        font-size: 1rem;
+        color: white;
+        border: none;
+        width: 3.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+}
+
+.bluehouse {
+  background-image: url("../assets/blue_house.png");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center;
+  width: 23rem;
+  height: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+
+  &_header {
+    // border: 1px solid green;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    cursor: pointer;
+
+    &_heart {
+      &:hover {
+        filter: invert(85%) sepia(93%) saturate(715%) hue-rotate(354deg)
+          brightness(215%) contrast(133%);
+
+        // filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5);
+      }
+    }
+  }
+
+  &_content {
+    position: relative;
+    width: 290px;
+    height: 160px;
+    top: 270px;
+    left: 40px;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    &_star {
+      width: 290px;
+      display: flex;
+      flex-direction: space-between;
+
+      &_stars {
+        display: inline-block;
+        font-size: 1rem;
+        margin: 0.6rem;
+      }
+
+      &_review {
+        margin-top: 0.8rem;
+        margin-left: 0.5rem;
+        font-size: 1rem;
+        color: grey;
+      }
+    }
+
+    h3 {
+      font-size: 1.7rem;
+      margin-left: 0.6rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: lighter;
+    }
+
+    &_location {
+      font-size: 1rem;
+      margin-left: 0.6rem;
+      margin-top: 0;
+      color: grey;
+    }
+
+    &_price {
+      width: 290px;
+      display: flex;
+      flex-direction: space-between;
+
+      &_night {
+        display: inline-block;
+        font-size: 1.3rem;
+        margin-left: 0.8rem;
+        margin-top: 0.7rem;
+        margin-bottom: 0;
+      }
+
+      &_forward {
+        border: 0;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        margin-left: 5rem;
+        background-color: rgb(40, 107, 184);
+
+        &_arrow {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+}
